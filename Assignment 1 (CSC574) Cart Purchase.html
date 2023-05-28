@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buy n' Cart</title>
+    <style>
+      h1 {
+        font-size: 40px ;
+        text-align: center ;
+        -webkit-text-fill-color: aliceblue;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        background-color: rgb(93, 185, 133);
+      }
+
+      h2 {
+        -webkit-text-fill-color: aliceblue;
+        text-align: center;
+      }
+
+      h4 {    
+        text-align: center ;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+      }
+
+      body {
+        background-color: rgb(228, 245, 133);
+      }
+
+      p {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center ;
+      }
+
+      * {
+            box-sizing: border-box;
+      }
+
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        height: 490px; 
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+
+
+</head>
+
+<body>
+
+  <script>
+    var totalPrice = 0;
+
+    function addToCart(item, price) {
+      totalPrice += parseFloat(price.split(' ')[1]);
+      alert(item + " added to cart.\nTotal Price: RM " + totalPrice.toFixed(2));
+    }
+
+  </script>
+
+  <h1>Buy n' Cart</h1>
+  <div class="row">
+    <div class="column" style="background-color:#e98585;">
+      <h2><i>Fresh n' Meat</i></h2>
+      <table>
+          <tr>
+              <th>No.</th>
+              <th>Item</th>
+              <th>Action</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Chicken (Cleaned)</td>
+            <td><button onclick="addToCart('Chicken (Cleaned)', 'RM 8.99')">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Chicken (Drumstick)</td>
+            <td><button onclick="addToCart('Chicken (Drumstick)', 'RM 6.99')">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Chicken (Wings)</td>
+            <td><button onclick="addToCart('Chicken (Wings)', 'RM 5.99')">Add to Cart</button></td>
+          </tr>
+          </tr>
+        <tr>
+            <td>4.</td>
+            <td>Beef (Frozen)</td>
+            <td><button onclick="addToCart('Beef (Frozen)', 'RM 14.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Beef (Cribs)</td>
+            <td><button onclick="addToCart('Beef (Cribs)', 'RM 14.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>Lamb (Frozen)</td>
+            <td><button onclick="addToCart('Lamb (Frozen)', 'RM 24.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>Lamb (Cribs)</td>
+            <td><button onclick="addToCart('Lamb (Cribs)', 'RM 14.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>Duck (Cleaned)</td>
+            <td><button onclick="addToCart('Duck (Cleaned)', 'RM 9.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>Rabbit (Cleaned)</td>
+            <td><button onclick="addToCart('Rabbit (Cleaned)', 'RM 19.99')">Add to Cart</button></td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="column" style="background-color:#508eb8;">
+      <h2><i>Fresh n' Seafood</i></h2>
+      <table>
+          <tr>
+            <th>No.</th>
+            <th>Item</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Anchovies</td>
+            <td><button onclick="addToCart('Anchovies', 'RM 7.99')">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Bawal Fish</td>
+            <td><button onclick="addToCart('Bawal Fish', 'RM 11.99')">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Sardines</td>
+            <td><button onclick="addToCart('Sardines', 'RM 4.99')">Add to Cart</button></td>
+          </tr>
+          </tr>
+        <tr>
+            <td>4.</td>
+            <td>Beef (Frozen)</td>
+            <td><button onclick="addToCart('Dori Fillet (Frozen)', 'RM 9.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Catfish</td>
+            <td><button onclick="addToCart('Catfish', 'RM 8.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>Salmon Fillet (Frozen)</td>
+            <td><button onclick="addToCart('Salmon Fillet (Frozen)', 'RM 34.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>Tiger Prawn</td>
+            <td><button onclick="addToCart('Tiger Prawn', 'RM 19.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>Flower Crab</td>
+            <td><button onclick="addToCart('Flower Crab', 'RM 14.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>Red Fish</td>
+            <td><button onclick="addToCart('Red Fish', 'RM 9.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>10.</td>
+          <td>Grouper Fish</td>
+          <td><button onclick="addToCart('Grouper Fish', 'RM 8.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>11.</td>
+          <td>Stingray</td>
+          <td><button onclick="addToCart('Stingray', 'RM 9.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>12.</td>
+          <td>White Squid</td>
+          <td><button onclick="addToCart('White Squid', 'RM 11.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>13.</td>
+          <td>Clams</td>
+          <td><button onclick="addToCart('Clams', 'RM 14.99')">Add to Cart</button></td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="column" style="background-color:#26c921;">
+      <h2><i>Fresh n' Veggies</i></h2>
+      <table>
+          <tr>
+            <th>No.</th>
+            <th>Item</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Potato</td>
+            <td><button onclick="addToCart('Potato', 'RM 5.99')">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Shallots</td>
+            <td><button onclick="addToCart('Shallots', 'RM 4.99')">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Garlic</td>
+            <td><button onclick="addToCart('Garlic', 'RM 4.99')">Add to Cart</button></td>
+          </tr>
+          </tr>
+        <tr>
+            <td>4.</td>
+            <td>Cabbage</td>
+            <td><button onclick="addToCart('Cabbage', 'RM 3.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Cameron Leek</td>
+            <td><button onclick="addToCart('Cameron Leek', 'RM 5.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>Baby Corn</td>
+            <td><button onclick="addToCart('Baby Corn', 'RM 6.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>Capsicum</td>
+            <td><button onclick="addToCart('Capsicum', 'RM 4.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>Chilies</td>
+            <td><button onclick="addToCart('Chilies', 'RM 4.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>Black Pepper</td>
+            <td><button onclick="addToCart('Black Pepper', 'RM 49.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>10.</td>
+          <td>Pok Choi</td>
+          <td><button onclick="addToCart('Pok Choi', 'RM 4.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>11.</td>
+          <td>Carrots</td>
+          <td><button onclick="addToCart('Carrots', 'RM 5.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>12.</td>
+          <td>Scallions</td>
+          <td><button onclick="addToCart('Scallions', 'RM 1.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>13.</td>
+          <td>Bay Leaves</td>
+          <td><button onclick="addToCart('Bay Leaves', 'RM 1.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>14.</td>
+          <td>Turmeric</td>
+          <td><button onclick="addToCart('Turmeric', 'RM 3.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>15.</td>
+          <td>Ginger</td>
+          <td><button onclick="addToCart('Ginger', 'RM 4.99')">Add to Cart</button></td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="column" style="background-color:#df9c51;">
+      <h2><i>Fresh n' Dairies</i></h2>
+        <table>
+          <tr>
+              <th>No.</th>
+              <th>Item</th>
+              <th>Action</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Flour</td>
+            <td><button onclick="addToCart('Flour', 'RM 3.99')">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Sugar</td>
+            <td><button onclick="addToCart('Sugar', 'RM 4.99')">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Salt</td>
+            <td><button onclick="addToCart('Salt', 'RM 2.99')">Add to Cart</button></td>
+          </tr>
+          </tr>
+        <tr>
+            <td>4.</td>
+            <td>Cooking Oil</td>
+            <td><button onclick="addToCart('Cooking Oil', 'RM 29.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Eggs</td>
+            <td><button onclick="addToCart('Eggs', 'RM 9.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>Milk</td>
+            <td><button onclick="addToCart('Milk', 'RM 7.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>Custard</td>
+            <td><button onclick="addToCart('Custard', 'RM 5.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>Flavour Essence</td>
+            <td><button onclick="addToCart('Flavour Essence', 'RM 5.99')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>Sugar Icing</td>
+            <td><button onclick="addToCart('Sugar Icing', 'RM 6.99')">Add to Cart</button></td>
+        </tr>
+        </table>
+    </div>
+  </div>
+
+  <h4><a href="Assignment 1 (CSC574) Transaction & Purchase.html">Proceed to Payment >>></a></h4>
+    
+</body>
+</html>
